@@ -9,6 +9,7 @@
 }
 body{
     font-family: sans-serif;
+    background-color: #dddd;
 }
 .width50{
 	width : 50%;
@@ -29,4 +30,16 @@ li{
 	max-width: 1000px;
 	margin: auto;
 	width: 100%
+}
+.alignItems{
+    align-items: center;
+}
+
+/*Header*/
+
+.logoHeader{
+    width: 10%;
+}
+header{
+    padding: 10px 20px;
 }
