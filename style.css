@@ -58,6 +58,15 @@ li {
 
 header {
     padding: 10px 20px;
+    background-color: #dddddd;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    top: -100px;
+    transition: 0.7s;
+}
+header.scrolled{
+    top:-10px
 }
 
 .btnPre {
@@ -67,18 +76,32 @@ header {
     border-radius: 20px;
 }
 
-a {
+nav a {
+    position: relative;
     color: black;
     font-weight: 500;
+}
+ nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff8400;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0,4s;
+}
+nav a:hover::after{
+    width: 100%;
 }
 
 /*hero*/
 .paddingHero {
-    height: 200px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25vh;
+    
     margin-bottom: 25vh;
 }
 
@@ -113,9 +136,13 @@ h2 {
 }
 
 /*Presentation*/
+.heightVH{
+    height: 100vh;
+}
 
 h3{
     font-family: "Michroma", sans-serif;
+    font-size: 36px;
     font-weight: 300;
     margin-bottom: 30px;
 }
@@ -128,5 +155,15 @@ p{
     margin-bottom: 40px;
 }
 .spline{
-    height: 400px;
+    height: 100vr;
+    width: 100%;
+}
+.cache{
+    height: 80px;
+    width: 150px;
+    background-color: #dddddd;
+    position: absolute;
+    top: 1450px;
+    left: 470px;
+    z-index: 9999;
 }
