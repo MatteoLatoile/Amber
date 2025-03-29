@@ -1,45 +1,132 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-.flex{
+
+.flex {
     display: flex;
     flex-wrap: wrap;
 }
-body{
-    font-family: sans-serif;
-    background-color: #dddd;
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color:#dddddd
 }
-.width50{
-	width : 50%;
+
+.width50 {
+    width: 50%;
 }
-.width30{
-	width : 30%;
+
+.column {
+    flex-direction: column;
 }
-.spaceBetween{
+
+.width30 {
+    width: 30%;
+}
+
+.spaceBetween {
     justify-content: space-between;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
-.container{
-	max-width: 1000px;
-	margin: auto;
-	width: 100%
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    width: 100%
 }
-.alignItems{
+
+.alignItems {
     align-items: center;
 }
 
 /*Header*/
 
-.logoHeader{
+.logoHeader {
     width: 10%;
 }
-header{
+
+header {
     padding: 10px 20px;
+}
+
+.btnPre {
+    background-color: #ff8400;
+    color: #ffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+a {
+    color: black;
+    font-weight: 500;
+}
+
+/*hero*/
+.paddingHero {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+}
+
+h1 {
+    font-family: "Michroma", sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.cta {
+    background-color: #ff8400;
+    margin-top: 20px;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.a {
+    color: #ff8400;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 300;
+}
+
+/*Presentation*/
+
+h3{
+    font-family: "Michroma", sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.imgPre{
+    width: 50%;
+    margin-top: -10px;
+}
+p{
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.spline{
+    height: 400px;
 }
